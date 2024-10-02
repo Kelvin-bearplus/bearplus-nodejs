@@ -16,7 +16,7 @@ exports.submitForm = (req, res) => {
   const { formName, formData } = req.body;
 
   // Kiểm tra nếu không có formName hoặc formFields
-  if (!formName || !formData) {
+  if (!formName || !formData)  {
       return res.status(400).send({
           error: true,
           message: 'Form name and form fields are required, and form fields must be a non-empty array'
